@@ -6,7 +6,7 @@ trigger TriggerOppertunity on Opportunity (after insert,after update)
     }
     else if(trigger.IsAfter && trigger.isUpdate){
         
-         OppertunityHandler.onAfterUpdate(Trigger.new,Trigger.oldMap);
+            OppertunityHandler.onAfterUpdate(Trigger.new,Trigger.oldMap);
     }
  
 }
